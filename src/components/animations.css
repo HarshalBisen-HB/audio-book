@@ -1,0 +1,108 @@
+@keyframes circle-move {
+    from{top: 0; opacity: 0;}
+    to{top: 150px; opacity: 1;}
+}
+@keyframes fadein {
+   0%{opacity: 0; top: 0;}
+   100%{opacity: 1; top: 196px;}
+}
+@keyframes fadeinn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.page-context-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cirle-gradient {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    background: rgb(179,60,0);
+    background: linear-gradient(356deg, rgba(179,60,0,1) 0%, rgba(255,170,128,1) 100%);  
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    animation-name: circle-move;
+    animation-duration: 1.5s;
+}
+.logo-icon {
+    position: absolute;
+    width: 80px;
+    top: 196px;
+    left: 119px;
+    animation-name: fadein;
+    animation-duration: 2s;
+    
+}
+.icon-logo-text {
+    position: absolute;
+    top: 280px;
+    left: 120px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 300;
+}
+.circle-icon {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 170, 128);
+    animation-name: fadeinn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.icon-text {
+    font-size: .7rem;
+    color: white;
+}
+#first-circle {
+    position: absolute;
+    top: 108px;
+    left: 20px;
+}
+#second-circle {
+    position: absolute;
+    top: 70px;
+    left: 123px;
+}
+#third-circle {
+    position: absolute;
+    top: 108px;
+    left: 230px
+}
+.landing-header {
+    opacity: 0;
+    position: absolute;
+    bottom: -420px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+    
+    animation-name: fadeinn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.link-to-home {
+    font-size: .8rem;
+    position: absolute;
+    top: 440px;
+    left: 110px;
+}
